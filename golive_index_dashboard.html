@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoLive | Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-full px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="p-4">
+                    <div class="flex items-center justify-between">
+                        <h1 class="text-2xl font-bold">GoLive<sup class="text-xs">UG</sup></h1>
+                        <button class="lg:hidden">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <h2 class="text-xl">Welcome <span class="text-blue-500">Cognosphere Dynamics</span></h2>
+                <div class="flex items-center space-x-4">
+                    <button class="p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                            </path>
+                        </svg>
+                    </button>
+                    <img src="/api/placeholder/32/32" alt="Profile" class="w-8 h-8 rounded-full">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex pt-16">
+        <!-- Sidebar -->
+        <aside class="fixed left-0 top-20 w-64 h-screen bg-white border-r border-gray-200 overflow-y-auto">
+            <div class="p-4">
+                <nav class="space-y-1">
+                    <!-- Dashboard-->
+                    <a href="golive_index_dashboard.html" class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 rounded-lg">
+                        <i class="fas fa-th-large w-5 h-5 mr-3"></i>
+                        Dashboard
+                    </a>
+
+                    <!-- Radio Section -->
+                    <div class="relative">
+                        <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg dropdown-btn">
+                            <i class="fas fa-radio w-5 h-5 mr-3"></i>
+                            Radio
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="relative bg-white mt-1 rounded-lg hidden">
+                            <a href="golive_radio_stations.html">
+                            <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-wave-square w-5 h-5 mr-3"></i>
+                                Stations
+                            </button>
+                            </a>
+
+                            <a href="golive_radio_podcast.html">
+                            <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-podcast w-5 h-5 mr-3"></i>
+                                Podcast
+                            </button>
+                            </a>
+
+                            <a href="golive_radio_people.html">
+                            <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-users w-5 h-5 mr-3"></i>
+                                People
+                            </button>
+                            </a>
+
+                            <a href="golive_radio_feedback.html">
+                            <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-comments w-5 h-5 mr-3"></i>
+                                Feedback
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--TV Section-->
+                    <div class="relative">
+                        <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg dropdown-btn">
+                            <i class="fas fa-tv w-5 h-5 mr-3"></i>
+                            TV
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="relative bg-white mt-1 rounded-lg hidden">
+                            <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-wave-square w-5 h-5 mr-3"></i>
+                                Stations
+                            </button>
+                            <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-podcast w-5 h-5 mr-3"></i>
+                                Podcast
+                            </button>
+                            <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-users w-5 h-5 mr-3"></i>
+                                People
+                            </button>
+                            <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-signal w-5 h-5 mr-3"></i>
+                                Analytics
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Other menu items -->
+                    <div class="relative">
+                        <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fas fa-box w-5 h-5 mr-3"></i>
+                            Account
+                        </button>
+                    </div>
+
+                    <div class="relative">
+                        <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fas fa-star w-5 h-5 mr-3"></i>
+                            Plans
+                        </button>
+                    </div>
+
+                    <div class="relative">
+                        <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fas fa-question w-5 h-5 mr-3"></i>
+                            Need Help
+                        </button>
+                    </div>
+
+                    <div class="relative">
+                        <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fas fa-briefcase w-5 h-5 mr-3"></i>
+                            GoLive Desk
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main content wrapper -->
+        <div class="ml-64 flex-1 p-8">
+            <!-- Top Navigation Cards -->
+            <div class="grid grid-cols-4 gap-4 mb-8">
+                <div class="bg-white p-4 rounded-lg shadow flex items-center space-x-3">
+                    <div class="text-blue-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-xl font-bold">102.7</div>
+                        <div class="text-sm text-gray-500">Mega 100 FM</div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow flex items-center space-x-3">
+                    <div class="text-green-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-xl font-bold">Promote</div>
+                        <div class="text-sm text-gray-500">Your Station</div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow flex items-center space-x-3">
+                    <div class="text-blue-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-xl font-bold">Reach</div>
+                        <div class="text-sm text-gray-500">New Audience</div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow flex items-center space-x-3">
+                    <div class="text-blue-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-xl font-bold">Boost</div>
+                        <div class="text-sm text-gray-500">Your Station now</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="grid grid-cols-3 gap-8">
+                <!-- Welcome Section -->
+                <div class="col-span-1">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-xl font-semibold">Welcome Back ourUser</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Section -->
+                <div class="col-span-1">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg">
+                            <div class="flex items-center justify-center h-48 bg-gray-100 rounded">
+                                <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Section -->
+                <div class="col-span-1">
+                    <div class="mb-6 flex items-center justify-between">
+                        <h2 class="text-xl font-semibold text-gray-900">News & Updates | Today</h2>
+                        <div class="relative">
+                            <button onclick="document.getElementById('filterMenu').classList.toggle('hidden')"
+                                class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                                </svg>
+                            </button>
+                            <!-- Filter Dropdown Menu -->
+                            <div id="filterMenu"
+                                class="absolute right-0 mt-2 hidden w-48 rounded-md border border-gray-100 bg-white py-2 shadow-lg">
+                                <div class="px-4 py-2 text-sm text-gray-500">FILTER</div>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Today</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">This Month</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">This Year</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Items -->
+                    <div class="space-y-6">
+                        <!-- News Item 1 -->
+                        <div class="flex space-x-4">
+                            <img src="/api/placeholder/80/80" alt="" class="h-16 w-16 rounded-lg object-cover">
+                            <div class="flex-1">
+                                <h3 class="mb-1 text-base font-semibold text-blue-800 hover:text-blue-600">
+                                    Nihil blanditiis at in nihil autem
+                                </h3>
+                                <p class="text-sm text-gray-600">
+                                    Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- News Item 2 -->
+                        <div class="flex space-x-4">
+                            <img src="/api/placeholder/80/80" alt="" class="h-16 w-16 rounded-lg object-cover">
+                            <div class="flex-1">
+                                <h3 class="mb-1 text-base font-semibold text-blue-800 hover:text-blue-600">
+                                    Quidem autem et impedit
+                                </h3>
+                                <p class="text-sm text-gray-600">
+                                    Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- News Item 3 -->
+                        <div class="flex space-x-4">
+                            <img src="/api/placeholder/80/80" alt="" class="h-16 w-16 rounded-lg object-cover">
+                            <div class="flex-1">
+                                <h3 class="mb-1 text-base font-semibold text-blue-800 hover:text-blue-600">
+                                    Id quia et et ut maxime similique
+                                </h3>
+                                <p class="text-sm text-gray-600">
+                                    Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- News Item 4 -->
+                        <div class="flex space-x-4">
+                            <img src="/api/placeholder/80/80" alt="" class="h-16 w-16 rounded-lg object-cover">
+                            <div class="flex-1">
+                                <h3 class="mb-1 text-base font-semibold text-blue-800 hover:text-blue-600">
+                                    Laborum corporis quo dara net para
+                                </h3>
+                                <p class="text-sm text-gray-600">
+                                    Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- News Item 5 -->
+                        <div class="flex space-x-4">
+                            <img src="/api/placeholder/80/80" alt="" class="h-16 w-16 rounded-lg object-cover">
+                            <div class="flex-1">
+                                <h3 class="mb-1 text-base font-semibold text-blue-800 hover:text-blue-600">
+                                    Et dolores corrupti quae illo
+                                </h3>
+                                <p class="text-sm text-gray-600">
+                                    Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Footer -->
+<footer class="fixed bottom-0 left-64 right-0 border-t border-blue-200 bg-white text-center py-2">
+    <p class="text-sm text-gray-500">
+        &copy; Copyright
+        <span class="text-blue-500 font-semibold">Cognosphere Dynamics LLC</span>.
+        All Rights Reserved
+    </p>
+</footer>
+
+        </div>
+        
+    </div>
+
+    <script>
+        // Dropdown toggle functionality
+        const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+        dropdownBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const dropdownContent = this.nextElementSibling;
+                if (dropdownContent) {
+                    dropdownContent.classList.toggle('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
