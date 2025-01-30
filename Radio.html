@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoLive UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 bg-gray-100">
+   <div class=" mx-auto bg-white p-6 rounded-2xl shadow-lg">
+        <header class="flex justify-between items-center mb-6">
+            <h1 class="text-6xl font-bold text-cyan-500">GoLive <sup class="text-xs">UG</sup></h1>
+            <button class="bg-cyan-500 text-white px-4 py-2 rounded-lg">Login</button>
+        </header>
+        
+        <div class="flex gap-6">
+            <div class="flex-1">
+                <div class="bg-gray-200 p-8 rounded-xl flex items-center gap-10">
+                    <img src="./IMAGES/Record.jpg" alt="Record FM Logo" class="w-30 h-30" />
+                    <div>
+                        <h2 class="font-semibold">Record FM</h2>
+                        <div class="flex items-center gap-8 text-sm text-gray-600">
+                            <button class="p-8 bg-cyan-500 text-white rounded-full">Play</button>
+                            <span>FM</span>
+                            <span >send feedback</span>
+                            <div class="flex  items-center">
+                            <span class="text-gray-500">👍</span>
+                            <span class="text-gray-500">👎</span>
+                            <span class="text-gray-500">🔊</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="text-6xl text-cyan-500">Translations</h1>
+                <p class="text-gray-600  mt-2 text-4x1">
+                    Our content will be translated using advanced AI technology provided by Twogere. 
+                    This ensures that our translations are accurate, efficient, and tailored to your needs. 
+                    We are committed to delivering high-quality translations to help you reach a global audience effortlessly.
+                </p>
+                
+                <h1 class="text-6xl text-cyan-500 ">Stations</h1>
+            </div>
+
+            <div class="w-64 flex-shrink-0  p-4 rounded-xl text-center">
+                <div class="container mx-w-full p-8 ">
+                      <div class=" max-w-full bg-white rounded-lg  overflow-hidden">
+                            <video src="your-video.mp4" controls class="w-full h-24"></video>
+                        </div>
+                
+                        <div class="bg-white rounded-lg shadow-md p-6 mt-2">  <h2 class="text-2xl font-bold text-gray-800 bg-cyan-600 text-white px-10 py-3 rounded-lg flex items-center gap-2">Twogere coming soon</h2>
+                            </div>
+                
+                    </div>
+            </div>
+        </div>
+        
+        <div class="mt-6 relative">
+            <input type="text" placeholder="Search Stations..." class="w-full p-2 border rounded-lg" />
+        </div>
+        <body class="p-6 bg-gray-600">
+            <div class=" mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden"> 
+                    <img src="./IMAGES/micro.jpg" alt="Omega 100" class="w-full h-48 object-cover">
+                    <span class="bg-cyan-500 text-white text-xs px-2 py-1 rounded-full absolute">Musics</span>
+                    <div class="p-4">
+                        <h2 class="mt-2 text-lg text-cyan-500 font-semibold ">Omega 100</h2>
+                        <p class="text-sm font-bold">FM</p>
+                        <p class="text-sm text-gray-600">Kampala, Uganda</p>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./IMAGES/Record.jpg" alt="Record FM" class="w-full h-48 object-contain p-4">
+                        <span class="bg-cyan-500 text-white text-xs px-2 py-1 rounded-full">3</span>
+                        <div class="p-4">
+                        <h2 class="mt-2 text-lg text-cyan-500 font-semibold">Record FM</h2>
+                        <div class="my-2 w-full h-6 bg-black"></div>
+                        <p class="text-sm text-gray-600">Kampala, Uganda</p>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./IMAGES/cbm.png" alt="CBM Radio" class="w-full h-48 object-contain p-4">
+                        <span class="bg-cyan-500 text-white text-xs px-2 py-1 rounded-full absolute ">General</span>
+                        <div class="p-4">
+                        <h2 class="mt-2 text-lg text-cyan-500 font-semibold">CBM Radio</h2>
+                        <p class="text-sm text-gray-600">Kampala, Uganda</p>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="./IMAGES/ucc.jpg" alt="UCC Testbed Radio" class="w-full h-48 object-cover">
+                        <span class="bg-cyan-500 text-white text-xs px-2 py-1 rounded-full absolute ">General</span>
+                        <div class="p-4">
+                        <h2 class="mt-2 text-lg text-cyan-500 font-semibold">UCC Testbed Radio</h2>
+                        <p class="text-sm text-gray-600">Kampala, Uganda</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center bg-gradient-to-r from-cyan-100 to-transparent">
+                <!-- Text Section -->
+                <div>
+                    <h1 class="text-7xl font-bold text-gray-900">Check out the GoLive Radio App</h1>
+                    <p class="text-5x1 text-gray-600">All of the broadcasters on our network can be found on the GoLive Radio App.</p>
+                    <p class="text-4x1 text-gray-600">Save your favorite radio station, download shows for later and more...</p>
+                    <div class="mt-6 flex gap-4">
+                        <button class="bg-cyan-600 text-white px-10 py-3 rounded-lg flex items-center gap-2">
+                          <img src="./IMAGES/again.jpg" class="w-4 h-4"> <!-- Apple icon -->
+                            Download
+                        </button>
+                        <button class="border border-cyan-600 px-10 py-3 rounded-lg flex items-center gap-2">
+                            <img src="./IMAGES/again.jpg" class="w-4 h-4">  <!-- Google Play icon -->
+                            Download
+                        </button>
+                    </div>
+                </div>
+                <!-- Image Section -->
+                <div class="relative flex justify-center">
+                    <img src="./IMAGES/twogere_banner.png" alt="GoLive App" class="w-2/3 md:w-1/2">
+                </div>
+            </div>
+            <div class="container mx-auto py-16">
+                <h1 class="text-7xl text-cyan-600 font-bold text-center mb-8">Our Partners</h1>
+        
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"> 
+                    <div class="flex justify-center items-center bg-gray-100 rounded-lg p-8 transition-all duration-300 hover:bg-blue-100 hover:scale-105 marquee flex space-x-4">
+                        <img src="./IMAGES/Ministry.png" alt="Ministry of ICT and National Guidance" class="w-26">
+                    </div>
+                    <div class="flex justify-center items-center bg-gray-100 rounded-lg p-8 transition-all duration-300 hover:bg-blue-100 hover:scale-105">
+                        <img src="./IMAGES/Nnational.png" alt="National ICT Innovation Hub" class="w-26">
+                    </div>
+                    <div class="flex justify-center items-center bg-gray-100 rounded-lg p-8 transition-all duration-300 hover:bg-blue-100 hover:scale-105">
+                        <img src="./IMAGES/another.png" alt="Trajectory Beyond Boundaries" class="w-26">
+                    </div>
+                    <div class="flex justify-center items-center bg-gray-100 rounded-lg p-8 transition-all duration-300 hover:bg-blue-100 hover:scale-105">
+                        <img src="./IMAGES/guidence.png" alt="Ministry of ICT and National Guidance" class="w-26">
+                    </div>
+                    <div class="flex justify-center items-center bg-gray-100 rounded-lg p-8 transition-all duration-300 hover:bg-blue-100 hover:scale-105">
+                        <img src="./IMAGES/Innovation.png" alt="National ICT Innovation Hub" class="w-26">
+                    </div>
+                    <div class="flex justify-center items-centers bg-gray-100 rounded-lg p-8 transition-all duration-300 hover:bg-blue-100 hover:scale-105">
+                        <img src="./IMAGES/Another-6.png" alt="Trajectory Beyond Boundaries" class="w-26">
+                    </div>
+                </div>
+            </div>
+        
+            <footer class="bg-gray-100 text-black py-6">
+                <div class="container mx-auto">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                        <div>
+                            <h3 class="text-xl text-gray-800 font-bold mb-4">Creators</h3>
+                            <div class="text-gray-600">
+                            <ul>
+                                <li>Radio Streaming</li>
+                                <li>Podcast</li>
+                                <li>Radio Automation Software</li>
+                                <li>GoLive Plans</li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl text-gray-800 font-bold mb-4">Partner With Us</h3>
+                            <div class="text-gray-600">
+                            <ul>
+                                <li>Promote Your Station</li>
+                                <li>GoLive API</li>
+                                <li>App Network</li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl text-gray-800 font-bold mb-4">About Us</h3>
+                            <div class="text-gray-600">
+                            <ul>
+                                <li>What we do</li>
+                                <li>Team</li>
+                                <li>Contact</li>
+                            </div>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl text-gray-800 font-bold mb-4">Follow us on social media!</h3>
+                            <div class="text-gray-600">
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Instagram</li>
+                                <li>X</li>
+                                <li>YouTube</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+    <div class="text-center md:text-left mt-10">
+        <p class="text-gray-600 text-lg mt-8">&copy; 2025 Cognosphere Dynamics Limited</p>
+      </div>
+  
+      <div class="mt-4 md:mt-0 flex justify-center md:justify-end space-x-6">  <a href="#" class="text-gray-800 hover:text-cyan-800 text-lg">Privacy</a>
+        <a href="#" class="text-gray-800 hover:text-cyan-800 text-lg">Terms</a>
+        <a href="#" class="text-gray-800 hover:text-cyan-800 text-lg">Cookies</a>
+        <a href="#" class="text-gray-800 hover:text-cyan-800 text-lg">GDPR</a>
+      </div>
+                </div>
+            </footer>
+    </div>
+    
+</body>
+</html>
