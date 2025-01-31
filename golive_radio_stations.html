@@ -61,7 +61,7 @@
                             <i class="fas fa-chevron-down ml-2"></i>
                         </button>
                         <div class="relative bg-white mt-1 rounded-lg hidden">
-                            <a href="golive_radio_station.html">
+                            <a href="golive_radio_stations.html">
                             <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
                                 <i class="fas fa-wave-square w-5 h-5 mr-3"></i>
                                 Stations
@@ -100,7 +100,7 @@
                             <i class="fas fa-chevron-down ml-2"></i>
                         </button>
                         <div class="relative bg-white mt-1 rounded-lg hidden">
-                            <a href="golive_tv_stations.html"><button
+                            <a href="golive_tv_station.html"><button
                                 class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
                                 <i class="fas fa-wave-square w-5 h-5 mr-3"></i>
                                 Stations
@@ -168,10 +168,39 @@
             <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-sm p-6">
                 <div class="flex justify-between items-center mb-6">
                     <h1 class="text-2xl font-semibold text-gray-800">Stations</h1>
-                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors">
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors" onclick="toggleModal()">
                         Add Station
                     </button>
                 </div>
+
+
+                <!-- <div id="modal-backdrop" class="fixed inset-0 bg-black bg-opacity-50 hidden"
+                onclick="toggleModal()">
+                </div>
+                
+                <div id="trial-modal"
+                        class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-xl w-full max-w-md hidden">
+                    <div class="p-6">
+                <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <div class="bg-white rounded-lg shadow-lg w-full max-w-md p-6">
+                      <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-xl font-bold text-gray-800">Complete Registration</h2>
+                        <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600">
+                          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                        </button>
+                      </div>
+                      <p class="text-gray-700 mb-6">
+                        To create a radio station, you must finish your registration.
+                      </p>
+                      <button onclick="clickHere()" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded">
+                        Click Here
+                      </button>
+                    </div>
+                  </div>
+                  </div>
+                </div> -->
 
                 <!-- Search and Filter Section -->
                 <div class="mb-8">
@@ -184,6 +213,49 @@
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </div>
+
+                    <!-- Modal backdrop -->
+                <div id="modal-backdrop" class="fixed inset-0 bg-black bg-opacity-50 hidden"
+                onclick="toggleModal()">
+            </div>
+
+            <!-- Modal dialog -->
+            <div id="trial-modal"
+                class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-xl w-full max-w-md hidden">
+                <div class="p-6">
+                    <!-- Header with icon and close button -->
+                    <div class="flex justify-between items-center mb-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                                </svg>
+                                
+                            </div>
+                            <h2 class="text-2xl text-sky-500">Complete Registration</h2>
+                        </div>
+                        <button onclick="toggleModal()" class="text-gray-400 hover:text-gray-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="space-y-4 mb-6">
+                        <p>To create a radio station, you must finish your registration </p>
+                    </div>
+
+                    <!-- Start button -->
+                     <a href="golive_accounts.html">
+                    <button onclick="handleStart()"
+                        class="w-full px-4 py-3 text-white bg-sky-500 rounded-md hover:bg-sky-600 transition-colors text-lg">
+                        Click Here
+                    </button>
+                    </a>
+                </div>
+            </div>
 
                     <div class="flex gap-4 mb-4">
                         <button class="px-4 py-2 rounded-full text-gray-600 hover:bg-gray-100 transition-colors">
@@ -245,6 +317,24 @@
                 }
             });
         });
+
+        function toggleModal() {
+            const modal = document.getElementById('trial-modal');
+            const backdrop = document.getElementById('modal-backdrop');
+            modal.classList.toggle('hidden');
+            backdrop.classList.toggle('hidden');
+        }
+
+        function handleStart() {
+            // Add your start trial logic here
+            console.log('Starting free trial...');
+            toggleModal();
+        }
+
+        // To show the modal
+        function showTrialModal() {
+            toggleModal();
+        }
     </script>
 </body>
 
