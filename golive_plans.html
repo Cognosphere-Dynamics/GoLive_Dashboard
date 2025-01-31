@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoLive | Station</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-full px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="p-4">
+                    <div class="flex justify-between">
+                        <h1 class="text-2xl font-bold">GoLive<sup class="text-xs">UG</sup></h1>
+                        <button class="lg:hidden">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <p><i class="fas fa-router w-5 h-5 mr-3"></i>
+                    Stations</p>
+                <div class="flex items-center space-x-4">
+                    <button class="p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                            </path>
+                        </svg>
+                    </button>
+                    <img src="#" alt="Profile" class="w-8 h-8 rounded-full">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex pt-16">
+        <!-- Sidebar -->
+        <aside class="fixed left-0 top-20 w-64 h-screen bg-white border-r border-gray-200 overflow-y-auto">
+            <div class="p-4">
+                <nav class="space-y-1">
+                    <!-- Dashboard-->
+                    <a href="golive_index_dashboard.html" class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 rounded-lg">
+                        <i class="fas fa-th-large w-5 h-5 mr-3"></i>
+                        Dashboard
+                    </a>
+
+                    <!-- Radio Section -->
+                    <div class="relative">
+                        <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg dropdown-btn">
+                            <i class="fas fa-radio w-5 h-5 mr-3"></i>
+                            Radio
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="relative bg-white mt-1 rounded-lg hidden">
+                            <a href="golive_radio_station.html">
+                            <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-wave-square w-5 h-5 mr-3"></i>
+                                Stations
+                            </button>
+                            </a>
+
+                            <a href="golive_radio_podcast.html">
+                            <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-podcast w-5 h-5 mr-3"></i>
+                                Podcast
+                            </button>
+                            </a>
+
+                            <a href="golive_radio_people.html">
+                            <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-users w-5 h-5 mr-3"></i>
+                                People
+                            </button>
+                            </a>
+
+                            <a href="golive_radio_feedback.html">
+                            <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-comments w-5 h-5 mr-3"></i>
+                                Feedback
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--TV Section-->
+                    <div class="relative">
+                        <button
+                            class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg dropdown-btn">
+                            <i class="fas fa-tv w-5 h-5 mr-3"></i>
+                            TV
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="relative bg-white mt-1 rounded-lg hidden">
+                            <a href="golive_tv_stations.html"><button
+                                class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-wave-square w-5 h-5 mr-3"></i>
+                                Stations
+                            </button></a>
+                            <a href="golive_tv_podcast.html"><button
+                                class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-podcast w-5 h-5 mr-3"></i>
+                                Podcast
+                            </button></a>
+                            <a href="golive_tv_people.html"><button
+                                class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-users w-5 h-5 mr-3"></i>
+                                People
+                            </button></a>
+                            <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-signal w-5 h-5 mr-3"></i>
+                                Analytics
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Other menu items -->
+                    <div class="relative">
+                        <a href="golive_accounts.html">
+                        <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fas fa-box w-5 h-5 mr-3"></i>
+                            Account
+                        </button>
+                        </a>
+                    </div>
+
+                    <div class="relative">
+                        <a href="golive_plans.html">
+                        <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fas fa-star w-5 h-5 mr-3"></i>
+                            Plans
+                        </button>
+                        </a>
+                    </div>
+
+                    <div class="relative">
+                        <a href="need help.html">
+                        <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fas fa-question w-5 h-5 mr-3"></i>
+                            Need Help
+                        </button>
+                        </a>
+                    </div>
+
+                    <div class="relative">
+                        <a href="golive desk.html">
+                        <button class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <i class="fas fa-briefcase w-5 h-5 mr-3"></i>
+                            GoLive Desk
+                        </button>
+                        </a>    
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main content wrapper -->
+        <div class="ml-64 flex-1 p-8">
+            <div class="max-w-6xl mx-auto mb-8">
+                <div class="bg-white rounded-lg p-6 mb-8">
+                    <div class="flex justify-between items-center">
+                        <p class="text-gray-700 text-lg">Broadcast widely, engaging with diverse communities and
+                            connecting across cultures. Inclusivity matters!</p>
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-gray-800">GoLive Pro Features</h3>
+                            <div class="space-y-1">
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm text-gray-600">Over 50 Local language translations</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm text-gray-600">International Language TRanslations</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm text-gray-600">Sign language translation and gestures</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-sm text-gray-600">Advertising on air</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12">Choose a Plan For Your New Radio
+                    Station</h2>
+
+                <!-- Pricing Cards Container -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Free Plan -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Free</h3>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-blue-500">$00.00</span>
+                            <span class="text-gray-500">/14days</span>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="flex-1 items-center">
+                                <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm">3</span>
+                                <span class="text-gray-600">Radio Stations</span>
+                            </div>
+                            <div class="flex-1 items-center gap-2">
+                                <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm">1</span>
+                                <span class="text-gray-600">TV Stations</span>
+                            </div>
+                            <div class="flex-1 items-center gap-2">
+                                <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm">100</span>
+                                <span class="text-gray-600">Advertising Credit</span>
+                            </div>
+                            <div class="flex-1 items-center gap-2">
+                                <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm">32</span>
+                                <span class="text-gray-600">Concurrent Listeners</span>
+                            </div>
+                            <div class="flex-1 items-center gap-2">
+                                <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm">1</span>
+                                <span class="text-gray-600">Streaming Bandwidth</span>
+                            </div>
+                            <div class="flex-1 items-center gap-2">
+                                <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm">10</span>
+                                <span class="text-gray-600">International Languages</span>
+                            </div>
+                            <div class="flex-1 items-center gap-2">
+                                <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm">5</span>
+                                <span class="text-gray-600">Local Languages</span>
+                            </div>
+                            <div class="flex-1 items-center gap-2">
+                                <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm"><i
+                                        class="fas fa-sign-language w-5 h-5 mr-3"></i>
+                                </span>
+                                <span class="text-gray-600">Sign Language</span>
+                            </div>
+                            <div class="flex-1 items-center gap-2">
+                                <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm"><i
+                                        class="fas fa-podcast w-5 h-5 mr-3"></i></span>
+                                <span class="text-gray-600">Podcast</span>
+                            </div>
+                            <div class="flex-1 items-center gap-2">
+                                <span class="items-center bg-blue-500 text-white px-2 py-1 rounded text-sm"><i
+                                        class="fas fa-folder w-5 h-5 mr-3"></i></span>
+                                <span class="text-gray-600">Storage</span>
+                            </div>
+                        </div>
+                        <a href="#">
+                        <button
+                            class="w-full mt-6 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors"
+                            onclick="toggleModal()">
+                            Get Now
+                        </button>
+                        </a>
+                    </div>
+
+                    <!-- Modal backdrop -->
+                    <div id="modal-backdrop" class="fixed inset-0 bg-black bg-opacity-50 hidden"
+                        onclick="toggleModal()">
+                    </div>
+
+                    <!-- Modal dialog -->
+                    <div id="trial-modal"
+                        class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-xl w-full max-w-md hidden">
+                        <div class="p-6">
+                            <!-- Header with icon and close button -->
+                            <div class="flex justify-between items-center mb-6">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-6 h-6 rounded-full bg-sky-500 flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <h2 class="text-2xl text-sky-500">Start Now</h2>
+                                </div>
+                                <button onclick="toggleModal()" class="text-gray-400 hover:text-gray-600">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="space-y-4 mb-6">
+                                <div class="flex">
+                                    <div class="w-32">
+                                        <span class="font-semibold text-gray-700">Name:</span>
+                                    </div>
+                                    <span class="text-gray-600">Free</span>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="w-32">
+                                        <span class="font-semibold text-gray-700">Description:</span>
+                                    </div>
+                                    <span class="text-gray-600">Free Plan</span>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="w-32">
+                                        <span class="font-semibold text-gray-700">Amount:</span>
+                                    </div>
+                                    <span class="text-gray-600">14 days free trial</span>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <p class="text-gray-600 text-center mb-6">
+                                You are ready to create your radio station.
+                            </p>
+
+                            <!-- Start button -->
+                             <a href="golive_accounts.html">
+                            <button onclick="handleStart()"
+                                class="w-full px-4 py-3 text-white bg-sky-500 rounded-md hover:bg-sky-600 transition-colors text-lg">
+                                Click Here to Start
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Starter Plan -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Starter</h3>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-blue-500">$12.49</span>
+                            <span class="text-gray-500">/month</span>
+                        </div>
+
+                        <div class="space-y-3">
+                            <!-- Same structure as Free plan but with lighter blue for spans -->
+                            <div class="flex items-center gap-2">
+                                <span class="bg-blue-200 text-blue-700 px-2 py-1 rounded text-sm">3</span>
+                                <span class="text-gray-400">Radio Stations</span>
+                            </div>
+                            <!-- Repeat for other features with same styling -->
+                        </div>
+
+                        <button
+                            class="w-full mt-6 bg-blue-200 text-blue-700 py-2 px-4 rounded-md hover:bg-blue-300 transition-colors">
+                            Buy Now
+                        </button>
+                    </div>
+
+                    <!-- Prime Plan -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Prime</h3>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-blue-500">$29.99</span>
+                            <span class="text-gray-500">/month</span>
+                        </div>
+
+                        <!-- Same structure as previous plans -->
+                        <button
+                            class="w-full mt-6 bg-blue-200 text-blue-700 py-2 px-4 rounded-md hover:bg-blue-300 transition-colors">
+                            Buy Now
+                        </button>
+                    </div>
+
+                    <!-- Premier Plan -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Premier</h3>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-blue-500">$139.99</span>
+                            <span class="text-gray-500">/month</span>
+                        </div>
+
+                        <!-- Same structure as previous plans -->
+                        <button
+                            class="w-full mt-6 bg-blue-200 text-blue-700 py-2 px-4 rounded-md hover:bg-blue-300 transition-colors">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="fixed bottom-0 left-64 right-0 border-t border-blue-200 bg-white text-center py-2">
+                <p class="text-sm text-gray-500">
+                    &copy; Copyright
+                    <span class="text-blue-500 font-semibold">Cognosphere Dynamics LLC</span>.
+                    All Rights Reserved
+                </p>
+            </footer>
+
+
+        </div>
+
+    </div>
+
+    <script>
+        // Dropdown toggle functionality
+        const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+        dropdownBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const dropdownContent = this.nextElementSibling;
+                if (dropdownContent) {
+                    dropdownContent.classList.toggle('hidden');
+                }
+            });
+        });
+
+        function toggleModal() {
+            const modal = document.getElementById('trial-modal');
+            const backdrop = document.getElementById('modal-backdrop');
+            modal.classList.toggle('hidden');
+            backdrop.classList.toggle('hidden');
+        }
+
+        function handleStart() {
+            // Add your start trial logic here
+            console.log('Starting free trial...');
+            toggleModal();
+        }
+
+        // To show the modal
+        function showTrialModal() {
+            toggleModal();
+        }
+    </script>
+</body>
+
+</html>
